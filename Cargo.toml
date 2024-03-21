@@ -1,0 +1,17 @@
+[package]
+name = "xlsx_purchase_monitor"
+version = "0.1.0"
+edition = "2021"
+
+#![crate_name="purchase_monitor"]
+
+[[bin]]
+name = "purchase_monitor"
+path = "src/main.rs"
+
+[dependencies]
+calamine = { version = "0.24.0", features = ["dates"] }
+rust_xlsxwriter = { version = "0.63.0", features = ["chrono"] }
+chrono = "0.4.34"
+rust_decimal = "1.34.3"
+
